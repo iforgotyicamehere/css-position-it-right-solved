@@ -1,70 +1,115 @@
 .legal-header {
-  background-color: #e2e2e2;
-  padding: 30px;
-  margin-top: 60px;
+  position: fixed;
+  display: flex;
+  background: linear-gradient(rgba(31, 44, 46, 0.966) 0%, rgb(32, 44, 43) 100%);
+  padding: 69px;
+  height: 40px;
   width: 100%;
 }
 
 .legal-header h1 {
+  position: fixed;
+  display: flex;
+  align-items: center;
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
+  left: 470px;
+  color: aliceblue;
+  background: transparent;
 }
 
 main {
+  overflow: visible;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 200px;
+  background: linear-gradient(rgba(91, 195, 236, 0.5) 0%, rgb(12, 14, 15) 100%);
 }
 
 section {
+  overflow: visible;
+  top: 132px;
+  right: -2.5%;
   display: flex;
   gap: 30px;
   position: relative;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(46, 37, 37);
+  border-radius: 125px;
   padding: 30px;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
-  color: white;
+  background-color: transparent;
+}
+.section-label-one,
+.section-label-two,
+.section-label-three {
+  position: sticky;
+  top: 140px;
+  left: 5%;
+  width: 100%;
+  border-radius: 55px;
+  background-color: rgb(171, 216, 241);
+  font-size: 34px;
+  text-align: center;
+  height: max-content;
+  margin: 0px 33px 22px 0;
 }
 
-.section-label {
-  width: 100%;
-  background-color: #2b2d3b;
-  height: max-content;
-  padding: 10px 16px;
+.section-label-one {
+  color: rgb(3, 5, 122);
+}
+.section-label-two {
+  color: rgb(7, 11, 243);
+}
+.section-label-three {
+  color: rgb(3, 5, 122);
 }
 
 .document-content {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 600px;
 }
 
 .document-content p {
   line-height: 28px;
+  color: rgb(119, 223, 223);
 }
-
 .document-content ol {
   margin: 0;
   padding-left: 40px;
+  color: rgb(245, 245, 245);
+  text-decoration: solid underline;
+  text-decoration-color: rgb(245, 245, 245);
 }
 
 .document-content li {
   line-height: 28px;
+  color: rgb(241, 242, 245);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: linear-gradient(
+    rgba(9, 181, 207, 0.966) 200%,
+    rgb(65, 138, 132) 100%
+  );
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: #e2e2e2;
+  background-color: blanchedalmond;
   padding: 0 30px;
   min-height: 70px;
+  z-index: 10;
 }
 
 .footer-content {
+  display: flex;
   width: 100%;
   max-width: 900px;
-  display: flex;
   gap: 50px;
   justify-content: space-between;
   align-items: center;
@@ -81,8 +126,7 @@ footer {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-
-.agree-btn:disabled {
+d .agree-btn:disabled {
   background-color: grey;
   color: black;
   cursor: not-allowed;
