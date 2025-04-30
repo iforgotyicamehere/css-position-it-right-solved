@@ -5,6 +5,7 @@
   padding: 69px;
   height: 40px;
   width: 100%;
+  z-index: 12;
 }
 
 .legal-header h1 {
@@ -14,27 +15,30 @@
   width: 100%;
   max-width: 900px;
   left: 470px;
-  color: aliceblue;
+  color: rgba(147, 173, 196, 0.555);
   background: transparent;
+  z-index: 5;
 }
 
 main {
-  overflow: visible;
   height: auto;
   padding-top: 5px;
   padding-bottom: 200px;
-  background: linear-gradient(rgba(91, 195, 236, 0.5) 0%, rgb(12, 14, 15) 100%);
+  background: linear-gradient(
+    rgba(34, 182, 241, 0.26) 0%,
+    rgb(12, 14, 15) 100%
+  );
 }
 
 section {
-  overflow: visible;
   top: 132px;
   right: -2.5%;
   display: flex;
   gap: 30px;
   position: relative;
-  border-bottom: 1px solid rgb(46, 37, 37);
-  border-radius: 125px;
+  border-bottom: 12px solid rgb(181, 182, 124);
+  border-radius: 125rem;
+  border-bottom-right-radius: 0px;
   padding: 30px;
   max-width: 1100px;
   margin: 0 auto;
@@ -48,21 +52,17 @@ section {
   left: 5%;
   width: 100%;
   border-radius: 55px;
-  background-color: rgb(171, 216, 241);
+  background-color: rgb(78, 100, 112);
   font-size: 34px;
   text-align: center;
   height: max-content;
   margin: 0px 33px 22px 0;
 }
 
-.section-label-one {
-  color: rgb(3, 5, 122);
-}
-.section-label-two {
-  color: rgb(7, 11, 243);
-}
+.section-label-one,
+.section-label-two,
 .section-label-three {
-  color: rgb(3, 5, 122);
+  color: rgb(170, 198, 218);
 }
 
 .document-content {
@@ -72,26 +72,29 @@ section {
 }
 
 .document-content p {
+  color: #f1e8e8;
+  position: flex;
+  align-items: center;
   line-height: 28px;
-  color: rgb(119, 223, 223);
 }
 .document-content ol {
+  color: #c0f0f0;
+  border-radius: 1.5rem;
+  border: 2px solid rgb(192, 205, 214);
   margin: 0;
   padding-left: 40px;
   color: rgb(245, 245, 245);
   text-decoration: solid underline;
-  text-decoration-color: rgb(245, 245, 245);
+  text-decoration-color: rgb(53, 38, 38);
 }
 
 .document-content li {
   line-height: 28px;
   color: rgb(241, 242, 245);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  background: linear-gradient(
-    rgba(9, 181, 207, 0.966) 200%,
-    rgb(65, 138, 132) 100%
-  );
+  background: transparent;
+}
+#user-agreement {
+  border: 0px;
 }
 
 footer {
@@ -126,7 +129,7 @@ footer {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-d .agree-btn:disabled {
+.agree-btn:disabled {
   background-color: grey;
   color: black;
   cursor: not-allowed;
